@@ -150,6 +150,7 @@ public class Relations {
 		for (int i = 0; i < cardinalityU; i++) {
 			for (int j = 0; j < cardinalityW; j++) {
 				compositionMatrix[i][j] = 0;
+
 				for (int k = 0; k < cardinalityV; k++) {
 					double min = Math.min(m1.get(i, k), m2.get(k, j));
 					if (k == 0) {

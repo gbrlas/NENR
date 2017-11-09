@@ -91,18 +91,18 @@ public class DomainElement {
 			return Integer.valueOf(this.getComponentValue(0)).toString();
 		}
 
-		StringBuilder sb = new StringBuilder();
-		sb.append('(');
+		StringBuilder builder = new StringBuilder();
+		builder.append('(');
 
 		for (int i = 0; i < values.length; ++i) {
-			sb.append(values[i]);
-			sb.append(", ");
+			builder.append(values[i]);
+			builder.append(", ");
 		}
 
-		sb.setLength(sb.length() - 2);
-		sb.append(')');
+		builder.setLength(builder.length() - 2);
+		builder.append(')');
 
-		return sb.toString();
+		return builder.toString();
 	}
 
 }

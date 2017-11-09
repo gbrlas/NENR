@@ -34,7 +34,7 @@ public class MutableFuzzySet implements IFuzzySet {
 	 * Sets the value of given elements membership function to given value.
 	 *
 	 * @param element the element of the fuzzy set.
-	 * @param mu      the value of memebership function.
+	 * @param val the value of membership function.
 	 * @return this instance of <code>MutableFuzzySet</code> class.
 	 */
 	public MutableFuzzySet set(DomainElement element, double val) throws IllegalArgumentException {

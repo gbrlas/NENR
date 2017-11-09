@@ -61,20 +61,20 @@ public class CompositeDomain extends Domain {
 
 		private boolean done;
 
-		private int counter;
+		private int numComponenets;
 		private int[] cursorValue;
 
 		public CompositeDomainIterator() {
 			done = false;
-			counter = CompositeDomain.this.getNumberOfComponents();
-			cursorValue = new int[counter];
-			for (int i = 0; i < counter; ++i) {
+			numComponenets = CompositeDomain.this.getNumberOfComponents();
+			cursorValue = new int[numComponenets];
+			for (int i = 0; i < numComponenets; ++i) {
 				cursorValue[i] = ((SimpleDomain) CompositeDomain.this.getComponent(i)).getFirst();
 			}
 		}
 
 		private boolean isFinished() {
-			for (int i = 0; i < counter; ++i) {
+			for (int i = 0; i < numComponenets; ++i) {
 				if (cursorValue[i] < ((SimpleDomain) CompositeDomain.this.getComponent(i)).getLast() - 1) {
 					return false;
 				}
@@ -90,19 +90,19 @@ public class CompositeDomain extends Domain {
 		@Override
 		public DomainElement next() throws NoSuchElementException {
 			if (this.hasNext()) {
-				int[] oldCursor = new int[counter];
-				oldCursor = Arrays.copyOf(cursorValue, counter);
+				int[] oldCursor = new int[numComponenets];
+				oldCursor = Arrays.copyOf(cursorValue, numComponenets);
 				DomainElement ret = DomainElement.of(oldCursor);
 
 				this.done = isFinished();
 
-				for (int i = counter - 1; i >= 0; --i) {
+				for (int i = numComponenets - 1; i >= 0; i--) {
 					if (cursorValue[i] == ((SimpleDomain) CompositeDomain.this.getComponent(i)).getLast() - 1) {
 						continue;
 					}
 
 					cursorValue[i]++;
-					for (int j = i + 1; j < counter; ++j) {
+					for (int j = i + 1; j < numComponenets; j++) {
 						cursorValue[j] = ((SimpleDomain) CompositeDomain.this.getComponent(j)).getFirst();
 					}
 					break;

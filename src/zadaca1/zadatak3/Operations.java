@@ -24,6 +24,7 @@ public class Operations {
 		for (DomainElement element : set.getDomain()) {
 			mutableSet.set(element, operation.valueAt(set.getValueAt(element)));
 		}
+
 		return mutableSet;
 	}
 
@@ -40,6 +41,7 @@ public class Operations {
 		for (DomainElement element : set1.getDomain()) {
 			mutableSet.set(element, operation.valueAt(set1.getValueAt(element), set2.getValueAt(element)));
 		}
+
 		return mutableSet;
 	}
 

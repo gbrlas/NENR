@@ -67,7 +67,7 @@ public class Primjer1 {
 				.set(DomainElement.of(2, 3), 0.5)
 				.set(DomainElement.of(3, 2), 0.5)
 				.set(DomainElement.of(1, 3), 0.4)
-				.set(DomainElement.of(3, 1), 0.4);
+				.set(DomainElement.of(3, 1), 0.0);
 
 		IDomain domain = r1.getDomain();
 		System.out.println(domain.getComponent(0));
