@@ -2,36 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253ca053-fa7a-4561-a669-fbda3f6daf12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca3/Variable.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/CompositeDomain$CompositeDomainIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/CompositeDomain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/Debug.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/Demo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/Domain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/DomainElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/IDomain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/SimpleDomain$SimpleDomainIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak1/SimpleDomain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/CalculatedFuzzySet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/Demo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/IFuzzySet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/MutableFuzzySet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/StandardFuzzySets.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/funkcije/GammaFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/funkcije/IIntUnaryFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/funkcije/LFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak2/funkcije/LambdaFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak3/Demo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak3/IBinaryFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak3/IUnaryFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca1/zadatak3/Operations.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca2/RelationMatrix.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca2/Relations.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca2/primjeri/Primjer1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca2/primjeri/Primjer2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca2/primjeri/Primjer3.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca3/rules/AccelerationRules.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca3/rules/RudderRules.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca3/rules/Rule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca3/rules/RuleBase.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zadaca3/Rule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/zadaca3/Rule.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca3/Term.java" afterPath="$PROJECT_DIR$/src/zadaca3/Term.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca3/FuzzyConclusion.java" afterPath="$PROJECT_DIR$/src/zadaca3/FuzzyConclusion.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +25,7 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Primjer1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zadaca2/primjeri/Primjer1.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,12 +46,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rule.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zadaca3/Rule.java">
+      <file leaf-file-name="Rule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/Rule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuleBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/RuleBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="62" column="42" lean-forward="false" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2677#2678#0" expanded="true" />
+                <element signature="e#2718#2719#0" expanded="true" />
+                <element signature="e#2746#2747#0" expanded="true" />
+                <element signature="e#2791#2792#0" expanded="true" />
+                <element signature="e#2823#2824#0" expanded="true" />
+                <element signature="e#2871#2872#0" expanded="true" />
+                <element signature="e#2906#2907#0" expanded="true" />
+                <element signature="e#2948#2949#0" expanded="true" />
+                <element signature="e#2977#2978#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccelerationRules.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/AccelerationRules.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="53" column="8" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RudderRules.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/RudderRules.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="62" column="54" lean-forward="false" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FuzzyConclusion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca3/FuzzyConclusion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+              <folding>
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,16 +123,9 @@
       <file leaf-file-name="Term.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zadaca3/Term.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
+            <state relative-caret-position="789">
               <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-              <folding>
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,14 +133,10 @@
       <file leaf-file-name="Variable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zadaca3/Variable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
+            <state relative-caret-position="909">
               <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#2020#2021#0" expanded="true" />
-                <element signature="e#2056#2057#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,9 +162,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/zadaca3/Rule.java" />
         <option value="$PROJECT_DIR$/src/zadaca3/Variable.java" />
         <option value="$PROJECT_DIR$/src/zadaca3/Term.java" />
+        <option value="$PROJECT_DIR$/src/zadaca3/Rule.java" />
+        <option value="$PROJECT_DIR$/src/zadaca3/FuzzyConclusion.java" />
+        <option value="$PROJECT_DIR$/src/zadaca3/RuleBase.java" />
+        <option value="$PROJECT_DIR$/src/zadaca3/rules/Rule.java" />
+        <option value="$PROJECT_DIR$/src/zadaca3/rules/RuleBase.java" />
+        <option value="$PROJECT_DIR$/src/zadaca3/rules/AccelerationRules.java" />
+        <option value="$PROJECT_DIR$/src/zadaca3/rules/RudderRules.java" />
       </list>
     </option>
   </component>
@@ -214,9 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,16 +284,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="zadaca3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="nenr_lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nenr_lab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zadaca3" type="462c0819:PsiDirectoryNode" />
+              <item name="rules" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -382,39 +428,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510221709716</updated>
-      <workItem from="1510221713247" duration="2331000" />
+      <workItem from="1510221713247" duration="2797000" />
+      <workItem from="1510224817521" duration="2234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2331000" />
+    <option name="totallyTimeSpent" value="5031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-126" y="-1058" width="2077" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23110256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -441,6 +489,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/Term.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca2/primjeri/Primjer1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zadaca2/RelationMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -449,40 +541,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca3/Term.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-          <folding>
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zadaca3/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
+        <state relative-caret-position="909">
           <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#2020#2021#0" expanded="true" />
-            <element signature="e#2056#2057#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca3/Rule.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/FuzzyConclusion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/Term.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/RuleBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="62" column="42" lean-forward="false" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2677#2678#0" expanded="true" />
+            <element signature="e#2718#2719#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2791#2792#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2906#2907#0" expanded="true" />
+            <element signature="e#2948#2949#0" expanded="true" />
+            <element signature="e#2977#2978#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/AccelerationRules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="8" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca3/rules/RudderRules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="62" column="54" lean-forward="false" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
