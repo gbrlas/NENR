@@ -1,0 +1,4 @@
+java -jar /Users/rebstastic/Documents/FER/NENR/artifacts/Brodic.jar
+1
+20
+10

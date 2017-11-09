@@ -1,7 +1,7 @@
 package zadaca3.system;
 
-import zadaca3.FuzzyConclusion;
 import zadaca3.rules.AccelerationRules;
+import zadaca3.utilities.FuzzyConclusion;
 
 import javax.naming.InvalidNameException;
 import java.util.List;
@@ -19,7 +19,7 @@ public class AccelerationFuzzySystemMin implements FuzzySystem {
         return def;
     }
 
-    public int conclude(int left, int right, int leftAngle, int rightAngle, int speed, int direction) {
+    public int conclude(int left, int right, int leftAngle, int rightAngle, int speed, int direction) throws Exception {
         List<FuzzyConclusion> conclusions = base
                 .getActivatedRules(left, right, leftAngle, rightAngle, speed, direction, (a, b) -> {
                     return Math.min(a, b);

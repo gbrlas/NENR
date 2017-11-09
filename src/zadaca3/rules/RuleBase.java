@@ -4,8 +4,8 @@ import zadaca1.zadatak1.IDomain;
 import zadaca1.zadatak1.SimpleDomain;
 import zadaca1.zadatak2.CalculatedFuzzySet;
 import zadaca1.zadatak2.StandardFuzzySets;
-import zadaca3.Term;
-import zadaca3.Variable;
+import zadaca3.utilities.Term;
+import zadaca3.utilities.Variable;
 
 public class RuleBase {
     private static Variable distance;

@@ -3,8 +3,8 @@ package zadaca3.rules;
 import zadaca1.zadatak1.DomainElement;
 import zadaca1.zadatak2.MutableFuzzySet;
 import zadaca1.zadatak3.IBinaryFunction;
-import zadaca3.FuzzyConclusion;
-import zadaca3.Term;
+import zadaca3.utilities.FuzzyConclusion;
+import zadaca3.utilities.Term;
 
 /**
  * Class which represents a single if-then rule with one or more antecedents and a single consequent.

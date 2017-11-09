@@ -1,4 +1,4 @@
-package zadaca3;
+package zadaca3.utilities;
 
 import javax.naming.InvalidNameException;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.List;
  * Class used for representing a single variable.
  *
  * @author goran
- * @version  1.0
+ * @version 1.0
  */
 public class Variable {
     /**
@@ -32,6 +32,7 @@ public class Variable {
 
     /**
      * Returns the variable name.
+     *
      * @return Variable name.
      */
     public String getName() {
@@ -45,7 +46,7 @@ public class Variable {
      * @return Variable term located at the provided index.
      * @throws IndexOutOfBoundsException If the index is lower than 0 or larger than the list size.
      */
-    public Term getTerm(int index) throws  IndexOutOfBoundsException {
+    public Term getTerm(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= terms.size()) {
             throw new IndexOutOfBoundsException("Term index out of bounds!");
         }
@@ -61,13 +62,13 @@ public class Variable {
      * @throws InvalidNameException If the term with the provided name doesn't exist in the list.
      */
     public Term getTerm(String name) throws InvalidNameException {
-        for (Term term: terms) {
+        for (Term term : terms) {
             if (term.getName().equals(name)) {
                 return term;
             }
         }
 
-        throw  new InvalidNameException("Invalid term name provided.");
+        throw new InvalidNameException("Invalid term name provided.");
     }
 
     /**

@@ -1,4 +1,4 @@
-package zadaca3;
+package zadaca3.utilities;
 
 import zadaca1.zadatak2.IFuzzySet;
 
@@ -6,7 +6,7 @@ import zadaca1.zadatak2.IFuzzySet;
  * Class which represents a single term used in fuzzy logic.
  *
  * @author goran
- * @version  1.0
+ * @version 1.0
  */
 public class Term {
     /**
@@ -24,6 +24,7 @@ public class Term {
 
     /**
      * Constructor which sets the term parameters to the provided ones.
+     *
      * @param variable
      * @param name
      * @param fuzzySet

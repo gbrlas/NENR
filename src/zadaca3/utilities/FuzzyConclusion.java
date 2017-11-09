@@ -1,4 +1,4 @@
-package zadaca3;
+package zadaca3.utilities;
 
 import zadaca1.zadatak2.IFuzzySet;
 
