@@ -18,19 +18,38 @@ public class AccelerationRules extends RuleBase {
     public AccelerationRules() throws InvalidNameException {
         setRuleBase();
 
-        rule1 = new Rule(new Term[]{getSpeed().getTerm("fast")},
+        rule1 = new Rule(new Term[]{getDistance().getTerm("close"), getSpeed().getTerm("fast")},
                 getAcceleration().getTerm("negative"));
 
-        rule2 = new Rule(new Term[]{getSpeed().getTerm("slow")},
+        rule2 = new Rule(new Term[]{getDistance().getTerm("middle"), getSpeed().getTerm("slow")},
                 getAcceleration().getTerm("positive"));
+
+        rule3 = new Rule(new Term[]{getDistance().getTerm("middle"), getDistance().getTerm("middle")},
+                getAcceleration().getTerm("positive"));
+
+        rule4 = new Rule(new Term[]{getSpeed().getTerm("fast")}, getAcceleration().getTerm("negative"));
+
+        rule5 = new Rule(new Term[]{getDistance().getTerm("tooClose"), getSpeed().getTerm("fast")},
+                getAcceleration().getTerm("negative"));
     }
 
     public List<FuzzyConclusion> getActivatedRules(int left, int right, int leftAngle, int rightAngle, int speed, int
             direction, IBinaryFunction function) {
 
         List<FuzzyConclusion> conclusions = new ArrayList<>();
-        conclusions.add(rule1.getConclusion(function, speed));
-        conclusions.add(rule2.getConclusion(function, speed));
+        conclusions.add(rule1.getConclusion(function, left, speed));
+        conclusions.add(rule1.getConclusion(function, right, speed));
+        conclusions.add(rule1.getConclusion(function, leftAngle, speed));
+        conclusions.add(rule1.getConclusion(function, rightAngle, speed));
+        conclusions.add(rule5.getConclusion(function, left, speed));
+        conclusions.add(rule5.getConclusion(function, right, speed));
+        conclusions.add(rule5.getConclusion(function, leftAngle, speed));
+        conclusions.add(rule5.getConclusion(function, rightAngle, speed));
+        conclusions.add(rule2.getConclusion(function, left, speed));
+        conclusions.add(rule2.getConclusion(function, right, speed));
+        conclusions.add(rule3.getConclusion(function, left, right));
+        conclusions.add(rule3.getConclusion(function, leftAngle, rightAngle));
+        conclusions.add(rule4.getConclusion(function, speed));
 
         return conclusions;
     }

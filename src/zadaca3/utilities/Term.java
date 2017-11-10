@@ -25,9 +25,9 @@ public class Term {
     /**
      * Constructor which sets the term parameters to the provided ones.
      *
-     * @param variable
-     * @param name
-     * @param fuzzySet
+     * @param variable Term variable.
+     * @param name     Term name.
+     * @param fuzzySet Term fuzzy set.
      */
     public Term(Variable variable, String name, IFuzzySet fuzzySet) {
         this.variable = variable;

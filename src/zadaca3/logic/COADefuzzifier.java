@@ -1,4 +1,4 @@
-package zadaca3.system;
+package zadaca3.logic;
 
 import zadaca1.zadatak1.DomainElement;
 import zadaca1.zadatak1.IDomain;

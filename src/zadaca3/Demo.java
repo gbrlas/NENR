@@ -1,6 +1,6 @@
 package zadaca3;
 
-import zadaca3.system.*;
+import zadaca3.logic.*;
 
 import javax.naming.InvalidNameException;
 import java.io.BufferedReader;

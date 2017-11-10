@@ -1,4 +1,4 @@
-package zadaca3.system;
+package zadaca3.logic;
 
 import zadaca3.utilities.FuzzyConclusion;
 

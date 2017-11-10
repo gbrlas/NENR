@@ -1,4 +1,4 @@
-package zadaca3.system;
+package zadaca3.logic;
 
 import zadaca3.rules.RudderRules;
 import zadaca3.utilities.FuzzyConclusion;
@@ -20,9 +20,15 @@ public class RudderFuzzySystemMin implements FuzzySystem {
         return def;
     }
 
+    public RudderRules getBase() {
+        return base;
+    }
+
     public int conclude(int left, int right, int leftAngle, int rightAngle, int speed, int direction) throws Exception {
         List<FuzzyConclusion> conclusions = base.
                 getActivatedRules(left, right, leftAngle, rightAngle, speed, direction, (a, b) -> Math.min(a, b));
-        return def.defuzzify(conclusions);
+
+        
+        return def.defuzzify(conclusions) - 90;
     }
 }
