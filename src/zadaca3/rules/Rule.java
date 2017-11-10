@@ -68,8 +68,7 @@ public class Rule {
 
         MutableFuzzySet conclusion = new MutableFuzzySet(consequent.getFuzzySet().getDomain());
         for (DomainElement element : consequent.getFuzzySet().getDomain()) {
-            double value = consequent.getFuzzySet().getValueAt(element);
-            conclusion.set(element, function.valueAt(mi, value));
+            conclusion.set(element, function.valueAt(mi, consequent.getFuzzySet().getValueAt(element)));
         }
 
         return new FuzzyConclusion(conclusion);

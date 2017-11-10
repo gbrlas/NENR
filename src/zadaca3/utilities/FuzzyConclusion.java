@@ -28,7 +28,7 @@ public class FuzzyConclusion {
      *
      * @return Conclusion set.
      */
-    public IFuzzySet getSet() {
+    public IFuzzySet getConclusionSet() {
         return set;
     }
 
@@ -37,7 +37,7 @@ public class FuzzyConclusion {
      *
      * @param set Conclusion set.
      */
-    public void setSet(IFuzzySet set) {
+    public void setConclusionSet(IFuzzySet set) {
         this.set = set;
     }
 }

@@ -15,15 +15,9 @@ public class AccelerationFuzzySystemMin implements FuzzySystem {
         this.base = new AccelerationRules();
     }
 
-    public Defuzzifier getDef() {
-        return def;
-    }
-
     public int conclude(int left, int right, int leftAngle, int rightAngle, int speed, int direction) throws Exception {
         List<FuzzyConclusion> conclusions = base
-                .getActivatedRules(left, right, leftAngle, rightAngle, speed, direction, (a, b) -> {
-                    return Math.min(a, b);
-                });
-        return def.defuzzify(conclusions) - 80;
+                .getActivatedRules(left, right, leftAngle, rightAngle, speed, direction, (a, b) -> Math.min(a, b));
+        return def.defuzzify(conclusions);
     }
 }
