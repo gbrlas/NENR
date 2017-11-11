@@ -8,13 +8,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
+/**
+ * Class used for calculating the needed acceleration and rudder angle.
+ * Called by the simulator.
+ *
+ * @author goran
+ * @version 1.0
+ */
 public class Demo {
 
     public static void main(String[] args) throws IOException, InvalidNameException, Exception {
 
         Defuzzifier def = new COADefuzzifier();
-        FuzzySystem fsAccel = new AccelerationFuzzySystemMin(def);
-        FuzzySystem fsRudder = new RudderFuzzySystemMin(def);
+        Conclusion fsAccel = new AccelerationConclusionMin(def);
+        Conclusion fsRudder = new RudderConclusionMin(def);
 
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 

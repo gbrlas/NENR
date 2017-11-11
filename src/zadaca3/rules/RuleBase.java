@@ -7,6 +7,12 @@ import zadaca1.zadatak2.StandardFuzzySets;
 import zadaca3.utilities.Term;
 import zadaca3.utilities.Variable;
 
+/**
+ * Class which holds the variables and rules used for the conclusion logic.
+ *
+ * @author goran
+ * @version 1.0
+ */
 public class RuleBase {
     private static Variable distance;
     private static Variable speed;
@@ -38,7 +44,7 @@ public class RuleBase {
         Term slow = new Term(speed, "slow",
                 new CalculatedFuzzySet(speedDomain, StandardFuzzySets.lFunction(10, 30)));
         Term fast = new Term(speed, "fast",
-                new CalculatedFuzzySet(speedDomain, StandardFuzzySets.gammaFunction(25, 45)));
+                new CalculatedFuzzySet(speedDomain, StandardFuzzySets.gammaFunction(25, 100)));
         speed.addTerm(slow);
         speed.addTerm(fast);
 
@@ -71,18 +77,38 @@ public class RuleBase {
         rudder.addTerm(l);
     }
 
+    /**
+     * Returns the variable representing the ship's distance from the shore.
+     *
+     * @return Ship's distance from the shore.
+     */
     public static Variable getDistance() {
         return distance;
     }
 
+    /**
+     * Returns the variable representing the ship's speed.
+     *
+     * @return Ship's speed.
+     */
     public static Variable getSpeed() {
         return speed;
     }
 
+    /**
+     * Returns the variable representing the ship's acceleration.
+     *
+     * @return Ship's acceleration.
+     */
     public static Variable getAcceleration() {
         return acceleration;
     }
 
+    /**
+     * Returns the variable representing the ship's rudder angle.
+     *
+     * @return Ship's rudder angle.
+     */
     public static Variable getRudder() {
         return rudder;
     }

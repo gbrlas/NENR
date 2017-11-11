@@ -7,6 +7,12 @@ import zadaca3.utilities.FuzzyConclusion;
 
 import java.util.List;
 
+/**
+ * Class which represents a COA (Center Of Area) defuzzifier.
+ *
+ * @author goran
+ * @version 1.0
+ */
 public class COADefuzzifier implements Defuzzifier {
 
     public int defuzzify(List<FuzzyConclusion> conclusions) throws Exception {

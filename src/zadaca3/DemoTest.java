@@ -8,8 +8,8 @@ public class DemoTest {
     public static void main(String[] args) throws InvalidNameException, Exception {
 
         Defuzzifier def = new COADefuzzifier();
-        FuzzySystem fsAccel = new AccelerationFuzzySystemMin(def);
-        FuzzySystem fsRudder = new RudderFuzzySystemMin(def);
+        Conclusion fsAccel = new AccelerationConclusionMin(def);
+        Conclusion fsRudder = new RudderConclusionMin(def);
 
         int L = 200, D = 20, LK = 400, DK = 30, V = 20, S = 1, accel, rudder;
 
