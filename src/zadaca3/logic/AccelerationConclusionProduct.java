@@ -53,8 +53,9 @@ public class AccelerationConclusionProduct implements Conclusion {
 
     public int conclude(int left, int right, int leftAngle, int rightAngle, int speed, int direction) throws Exception {
         List<FuzzyConclusion> conclusions = base.
-                getActivatedRules(left, right, leftAngle, rightAngle, speed, direction, (a, b) -> a * b);
+                getActivatedRules(left, right, leftAngle, rightAngle, speed, direction,
+                        (a, b) -> a * b);
 
-        return defuzzifier.defuzzify(conclusions) - 80;
+        return defuzzifier.defuzzify(conclusions) - 50;
     }
 }

@@ -18,15 +18,18 @@ public class COADefuzzifier implements Defuzzifier {
     public int defuzzify(List<FuzzyConclusion> conclusions) throws Exception {
         FuzzyConclusion res = null;
 
+        // combine all the conclusions
         if (conclusions.size() > 1) {
             res = new FuzzyConclusion(Operations.binaryOperation(conclusions.get(0).getConclusionSet(),
                     conclusions.get(1).getConclusionSet(), Operations.zadehOr()));
+            for (int i = 2; i < conclusions.size() - 1; i++) {
+                res.setConclusionSet(Operations.binaryOperation(conclusions.get(i).getConclusionSet(),
+                        res.getConclusionSet(), Operations.zadehOr()));
+            }
+        } else {
+            res = new FuzzyConclusion(conclusions.get(0).getConclusionSet());
         }
 
-        for (int i = 2; i < conclusions.size() - 1; i++) {
-            res.setConclusionSet(Operations.binaryOperation(conclusions.get(i).getConclusionSet(),
-                    res.getConclusionSet(), Operations.zadehOr()));
-        }
 
         IDomain domain = conclusions.get(0).getConclusionSet().getDomain();
         double a = 0;

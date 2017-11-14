@@ -50,9 +50,9 @@ public class RuleBase {
 
 
         Term negative = new Term(acceleration, "negative",
-                new CalculatedFuzzySet(accelerationDomain, StandardFuzzySets.lFunction(0, 65)));
+                new CalculatedFuzzySet(accelerationDomain, StandardFuzzySets.lFunction(0, 55)));
         Term positive = new Term(acceleration, "positive",
-                new CalculatedFuzzySet(accelerationDomain, StandardFuzzySets.gammaFunction(55, 120)));
+                new CalculatedFuzzySet(accelerationDomain, StandardFuzzySets.gammaFunction(50, 100)));
         acceleration.addTerm(negative);
         acceleration.addTerm(positive);
 

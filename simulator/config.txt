@@ -1,4 +1,4 @@
 java -jar /Users/goran/eclipse-workspace/nenr_lab/classes/artifacts/nenr_lab_jar/nenr_lab.jar
-3
+1
 20
 10
