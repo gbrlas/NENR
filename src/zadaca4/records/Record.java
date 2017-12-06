@@ -2,9 +2,7 @@ package zadaca4.records;
 
 public class Record {
     private double x;
-
     private double y;
-
     private double value;
 
     public Record(double x, double y, double value) {

@@ -2,7 +2,22 @@ package zadaca4.genetic_algorithm;
 
 import java.util.Random;
 
+/**
+ * Class which represents all the selection possibilities for the genetic algorithm implementation.
+ *
+ * @author goran
+ * @version 1.0
+ */
 public class Selection {
+    /**
+     * Implements roulette wheel selection as described here:
+     * https://en.wikipedia.org/wiki/Fitness_proportionate_selection
+     *
+     * @param numOfParents Number of parents to be selected.
+     * @param population   Chromosomes population.
+     * @param random       Random singleton used for random number generation.
+     * @return Array of <code>numOfParents</code> selected chromosomes.
+     */
     public static Chromosome[] rouletteWheelSelection(int numOfParents, Population population, Random random) {
         Chromosome[] parents = new Chromosome[numOfParents];
 
@@ -13,6 +28,13 @@ public class Selection {
         return parents;
     }
 
+    /**
+     * Helper function used for selecting one parent in a roulette wheel selection.
+     *
+     * @param population Chromosomes population.
+     * @param random     Random singleton used for random number generation.
+     * @return Selected parent.
+     */
     private static Chromosome rouletteSingleParent(Population population, Random random) {
         double sum = 0;
         double max = 0;
@@ -41,7 +63,15 @@ public class Selection {
         return population.getChromosome(population.getSize() - 1);
     }
 
-
+    /**
+     * Implements tournament wheel selection, as described here:
+     * https://en.wikipedia.org/wiki/Fitness_proportionate_selection
+     *
+     * @param numOfParents Number of parents to be selected.
+     * @param population   Chromosome population.
+     * @param random       Random singleton used for random number generation.
+     * @return Array of <code>numOfParents</code> selected chromosomes.
+     */
     public static Chromosome[] tournamentWheelSelection(int numOfParents, Population population, Random random) {
         Chromosome[] parents = new Chromosome[numOfParents];
 

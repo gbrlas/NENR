@@ -3,7 +3,23 @@ package zadaca4.genetic_algorithm;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+ * Class which represents all the crossover possibilities for the genetic algorithm implementation, as described
+ * here: https://en.wikipedia.org/wiki/Crossover_(genetic_algorithm)
+ *
+ * @author goran
+ * @version 1.0
+ */
 public class Crossover {
+    /**
+     * Implementation of the n-point crossover.
+     *
+     * @param n       Number of crossover points.
+     * @param parent1 First parent.
+     * @param parent2 Second parent.
+     * @param random  Random singleton used for random number generation.
+     * @return Child chromosome which is the result of the crossover.
+     */
     public static Chromosome nPointCrossover(int n, Chromosome parent1, Chromosome parent2, Random random) {
         int size = parent1.getSize();
         int[] points = new int[n];
@@ -34,7 +50,13 @@ public class Crossover {
         return child;
     }
 
-
+    /**
+     * Implementation of the n-point crossover.
+     *
+     * @param parent1 First parent.
+     * @param parent2 Second parent.
+     * @return Child chromosome which is the result of the crossover.
+     */
     public static Chromosome arithmeticCrossover(Chromosome parent1, Chromosome parent2) {
 
         int size = parent1.getSize();
