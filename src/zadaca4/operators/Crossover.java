@@ -1,4 +1,6 @@
-package zadaca4.genetic_algorithm;
+package zadaca4.operators;
+
+import zadaca4.genetic_algorithm.Chromosome;
 
 import java.util.Arrays;
 import java.util.Random;

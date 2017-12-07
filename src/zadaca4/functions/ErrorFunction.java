@@ -18,7 +18,7 @@ public class ErrorFunction {
      * @param chromosome Chromosome to be evaluated.
      * @param rec        Measured records.
      */
-    public void evaluate(Chromosome chromosome, Records rec) {
+    public void calculateChromosomeFitness(Chromosome chromosome, Records rec) {
         double error = 0;
         Record[] records = rec.getRecords();
 
@@ -38,9 +38,9 @@ public class ErrorFunction {
      * @param population Population to be evaluated.
      * @param records    Measured records.
      */
-    public void evaluate(Population population, Records records) {
+    public void evaluatePopulation(Population population, Records records) {
         for (Chromosome chromosome : population.getChromosomes()) {
-            evaluate(chromosome, records);
+            calculateChromosomeFitness(chromosome, records);
         }
     }
 }

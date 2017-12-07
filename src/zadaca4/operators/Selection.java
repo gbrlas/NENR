@@ -1,4 +1,7 @@
-package zadaca4.genetic_algorithm;
+package zadaca4.operators;
+
+import zadaca4.genetic_algorithm.Chromosome;
+import zadaca4.genetic_algorithm.Population;
 
 import java.util.Random;
 
@@ -22,7 +25,7 @@ public class Selection {
         Chromosome[] parents = new Chromosome[numOfParents];
 
         for (int i = 0; i < numOfParents; i++) {
-            parents[i] = rouletteSingleParent(population, random);
+            parents[i] = selectOneParent(population, random);
         }
 
         return parents;
@@ -35,7 +38,7 @@ public class Selection {
      * @param random     Random singleton used for random number generation.
      * @return Selected parent.
      */
-    private static Chromosome rouletteSingleParent(Population population, Random random) {
+    private static Chromosome selectOneParent(Population population, Random random) {
         double sum = 0;
         double max = 0;
 

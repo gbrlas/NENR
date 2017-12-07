@@ -1,7 +1,9 @@
-package zadaca4.genetic_algorithm.versions;
+package zadaca4.genetic_algorithm;
 
 import zadaca4.functions.ErrorFunction;
-import zadaca4.genetic_algorithm.*;
+import zadaca4.operators.Crossover;
+import zadaca4.operators.Mutation;
+import zadaca4.operators.Selection;
 import zadaca4.records.Records;
 
 import java.util.Random;
@@ -12,7 +14,7 @@ import java.util.Random;
  * @author goran
  * @version 1.0
  */
-public class EliminationAlgorithm {
+public class EliminationAlgorithm implements GeneticAlgorithm {
     /**
      * Population size.
      */
@@ -68,29 +70,23 @@ public class EliminationAlgorithm {
         this.pm = pm;
     }
 
-    /**
-     * Method which runs the genetic algorithm using previously provided parameters.
-     */
-    public static void run() {
+    public void run() {
         random = new Random();
 
         Records records = new Records(fileName);
 
         // initialization
-        Selection selection = new Selection();
-        Crossover crossover = new Crossover();
-        Mutation mutation = new Mutation();
         ErrorFunction errorFunction = new ErrorFunction();
         Population population = Population.createInitialPopulation(populationSize, numGenes, upperBound, lowerBound, random);
-        errorFunction.evaluate(population, records);
+        errorFunction.evaluatePopulation(population, records);
 
         int totalIterations = 0;
         Chromosome best = null;
         int counter = 0;
         double best_error = Double.MAX_VALUE;
-        while (totalIterations <= iterations && Math.abs(best_error) <= 1e-6) {
-            population = eliminationReplacement(population, errorFunction, records);
-            errorFunction.evaluate(population, records);
+        while (totalIterations <= iterations) {
+            population = populationReplacement(population, errorFunction, records);
+            errorFunction.evaluatePopulation(population, records);
             best = population.getBest();
 
             if (best.getFitness() <= best_error) {
@@ -109,7 +105,9 @@ public class EliminationAlgorithm {
             }
 
             totalIterations++;
-            System.out.println(totalIterations + ": " + best);
+            if (totalIterations % 100 == 0) {
+                System.out.println(totalIterations + ": " + best);
+            }
         }
 
         System.out.println();
@@ -117,17 +115,9 @@ public class EliminationAlgorithm {
         System.out.println("Number of iterations: " + totalIterations);
     }
 
-    /**
-     * Method which replaces the previous population using elimination.
-     *
-     * @param population   Previous population.
-     * @param evalFunction Evalueation function.
-     * @param records      Measurement records.
-     * @return New population.
-     */
-    public static Population eliminationReplacement(Population population,
-                                                    ErrorFunction evalFunction,
-                                                    Records records) {
+    public Population populationReplacement(Population population,
+                                            ErrorFunction evalFunction,
+                                            Records records) {
 
         Chromosome[] tournament = Selection.rouletteWheelSelection(3, population, random);
 
@@ -148,7 +138,7 @@ public class EliminationAlgorithm {
 
         Chromosome child = Crossover.arithmeticCrossover(bestParents[0], bestParents[1]);
         Mutation.uniformMutation(child, random, pm);
-        evalFunction.evaluate(child, records);
+        evalFunction.calculateChromosomeFitness(child, records);
 
         Chromosome worst = tournament[worst_i];
         for (int i = 0, n = population.getSize(); i < n; i++) {

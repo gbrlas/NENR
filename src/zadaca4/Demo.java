@@ -1,7 +1,7 @@
 package zadaca4;
 
-import zadaca4.genetic_algorithm.versions.EliminationAlgorithm;
-import zadaca4.genetic_algorithm.versions.GenerationalAlgorithm;
+import zadaca4.genetic_algorithm.EliminationAlgorithm;
+import zadaca4.genetic_algorithm.GenerationalAlgorithm;
 
 /**
  * Class used to demo the genetic algorithm implementations.

@@ -1,7 +1,9 @@
-package zadaca4.genetic_algorithm.versions;
+package zadaca4.genetic_algorithm;
 
 import zadaca4.functions.ErrorFunction;
-import zadaca4.genetic_algorithm.*;
+import zadaca4.operators.Crossover;
+import zadaca4.operators.Mutation;
+import zadaca4.operators.Selection;
 import zadaca4.records.Records;
 
 import java.util.Random;
@@ -12,7 +14,7 @@ import java.util.Random;
  * @author goran
  * @version 1.0
  */
-public class GenerationalAlgorithm {
+public class GenerationalAlgorithm implements GeneticAlgorithm {
     /**
      * Population size.
      */
@@ -75,10 +77,7 @@ public class GenerationalAlgorithm {
         this.pm = pm;
     }
 
-    /**
-     * Method which runs the genetic algorithm using previously provided parameters.
-     */
-    public static void run() {
+    public void run() {
         random = new Random();
 
         Records records = new Records(fileName);
@@ -86,15 +85,15 @@ public class GenerationalAlgorithm {
 
 
         Population population = Population.createInitialPopulation(populationSize, numGenes, upperBound, lowerBound, random);
-        errorFunction.evaluate(population, records);
+        errorFunction.evaluatePopulation(population, records);
 
         int totalIterations = 0;
         Chromosome best = null;
         int counter = 0;
         double best_error = Double.MAX_VALUE;
         while (totalIterations <= iterations) {
-            population = generationalReplacement(population, errorFunction, records);
-            errorFunction.evaluate(population, records);
+            population = populationReplacement(population, errorFunction, records);
+            errorFunction.evaluatePopulation(population, records);
             best = population.getBest();
 
             if (best.getFitness() <= best_error) {
@@ -113,7 +112,9 @@ public class GenerationalAlgorithm {
             }
 
             totalIterations++;
-            System.out.println(totalIterations + ": " + best);
+            if (totalIterations % 100 == 0) {
+                System.out.println(totalIterations + ": " + best);
+            }
         }
 
         System.out.println();
@@ -121,17 +122,9 @@ public class GenerationalAlgorithm {
         System.out.println("Number of iterations: " + totalIterations);
     }
 
-    /**
-     * Method which replaces the previous population using generational replacement.
-     *
-     * @param population   Previous population.
-     * @param evalFunction Evalueation function.
-     * @param records      Measurement records.
-     * @return New population.
-     */
-    public static Population generationalReplacement(Population population,
-                                                     ErrorFunction evalFunction,
-                                                     Records records) {
+    public Population populationReplacement(Population population,
+                                            ErrorFunction evalFunction,
+                                            Records records) {
 
         int size = population.getSize();
         Population nextGeneration = new Population(size);
@@ -152,7 +145,7 @@ public class GenerationalAlgorithm {
             pool.setChromosome(i, child);
         }
 
-        evalFunction.evaluate(pool, records);
+        evalFunction.evaluatePopulation(pool, records);
 
         while (numOfChildren < size) {
             int index = elitism ? numOfChildren - 1 : numOfChildren;
