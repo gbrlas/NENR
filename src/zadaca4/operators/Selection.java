@@ -67,15 +67,14 @@ public class Selection {
     }
 
     /**
-     * Implements tournament wheel selection, as described here:
-     * https://en.wikipedia.org/wiki/Fitness_proportionate_selection
+     * Implements random parent choosing.
      *
      * @param numOfParents Number of parents to be selected.
      * @param population   Chromosome population.
      * @param random       Random singleton used for random number generation.
      * @return Array of <code>numOfParents</code> selected chromosomes.
      */
-    public static Chromosome[] tournamentWheelSelection(int numOfParents, Population population, Random random) {
+    public static Chromosome[] randomSelection(int numOfParents, Population population, Random random) {
         Chromosome[] parents = new Chromosome[numOfParents];
 
         for (int i = 0; i < numOfParents; i++) {
@@ -85,4 +84,5 @@ public class Selection {
 
         return parents;
     }
+
 }

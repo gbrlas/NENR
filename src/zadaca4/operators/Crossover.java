@@ -16,17 +16,17 @@ public class Crossover {
     /**
      * Implementation of the n-point crossover.
      *
-     * @param n       Number of crossover points.
-     * @param parent1 First parent.
-     * @param parent2 Second parent.
-     * @param random  Random singleton used for random number generation.
+     * @param numOfPoints Number of crossover points.
+     * @param parent1     First parent.
+     * @param parent2     Second parent.
+     * @param random      Random singleton used for random number generation.
      * @return Child chromosome which is the result of the crossover.
      */
-    public static Chromosome nPointCrossover(int n, Chromosome parent1, Chromosome parent2, Random random) {
+    public static Chromosome nPointCrossover(int numOfPoints, Chromosome parent1, Chromosome parent2, Random random) {
         int size = parent1.getSize();
-        int[] points = new int[n];
+        int[] points = new int[numOfPoints];
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < numOfPoints; i++) {
             points[i] = random.nextInt(size);
         }
 
@@ -34,8 +34,8 @@ public class Crossover {
         Chromosome child = new Chromosome(size);
 
         // Iterate through breaking points
-        for (int i = 0; i < n; i++) {
-            int bound = (i == n - 1) ? size : points[i + 1];
+        for (int i = 0; i < numOfPoints; i++) {
+            int bound = (i == numOfPoints - 1) ? size : points[i + 1];
 
             if (i % 2 == 0) {
                 for (int j = points[i]; j < bound; j++) {
@@ -53,7 +53,7 @@ public class Crossover {
     }
 
     /**
-     * Implementation of the n-point crossover.
+     * Implementation of the arithmetic crossover.
      *
      * @param parent1 First parent.
      * @param parent2 Second parent.

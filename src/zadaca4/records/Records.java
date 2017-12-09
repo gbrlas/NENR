@@ -20,6 +20,10 @@ public class Records {
      * Name of the file containing the recorded measurements.
      */
     private String fileName;
+    /**
+     * Number of records in the file.
+     */
+    private int size;
 
     /**
      * Constructor which sets the file name and reads from file.
@@ -29,6 +33,7 @@ public class Records {
     public Records(String fileName) {
         this.fileName = fileName;
         readFromFile(this.fileName);
+        this.size = records.length;
     }
 
     /**
@@ -87,7 +92,7 @@ public class Records {
      * @return Size of the record array.
      */
     public int getSize() {
-        return records.length;
+        return size;
     }
 
     /**

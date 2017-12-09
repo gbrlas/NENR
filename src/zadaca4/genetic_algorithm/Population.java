@@ -69,7 +69,18 @@ public class Population {
     }
 
     /**
-     * Sets th epopulation size to the provided value.
+     * Returns the worst chromosome, sorted by their fitness value.
+     * Lower the value, better the chromosome.
+     *
+     * @return Best chromosome, sorted by fitness.
+     */
+    public Chromosome getWorst() {
+        Arrays.sort(chromosomes);
+        return chromosomes[chromosomes.length - 1];
+    }
+
+    /**
+     * Sets the population size to the provided value.
      *
      * @param newSize New population size.
      */
