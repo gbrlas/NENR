@@ -155,3 +155,37 @@ class MSE():
        """
         # Hint: don't forget that we took the average in the forward pass
         return 1 / (1. * len(y)) * (-(y - x))
+
+def softmax(x):
+    x -= np.max(x)
+    logits_exp = np.exp(x)
+    return logits_exp / np.sum(logits_exp, axis=1, keepdims=True)
+
+class SoftmaxCrossEntropyWithLogits():
+    def __init__(self):
+        self.has_params = False
+
+    def forward(self, x, y):
+        """
+        Args:
+          x: ndarray of shape (N, num_classes).
+          y: ndarray of shape (N, num_classes).
+        Returns:
+          Scalar, average loss over N examples.
+          It is better to compute average loss here instead of just sum
+          because then learning rate and weight decay won't depend on batch size.
+
+        """
+        return (-np.log(softmax(x)) * y).sum(axis=1).mean()
+
+    def backward_inputs(self, x, y):
+        """
+        Args:
+          x: ndarray of shape (N, num_classes).
+          y: ndarray of shape (N, num_classes).
+        Returns:
+          Gradient with respect to the x, ndarray of shape (N, num_classes).
+        """
+        # Hint: don't forget that we took the average in the forward pass
+        return (softmax(x) - y) / len(x)
+

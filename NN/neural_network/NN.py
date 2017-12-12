@@ -1,5 +1,5 @@
 import numpy as np
-from neural_network import Layers
+from neural_network import layers
 
 
 def forward_pass(net, inputs):
@@ -49,7 +49,6 @@ def train(train_x, train_y, net, loss, config):
             batch_X, batch_Y = train_x[i:i + batch_size], train_y[i:i + batch_size]
             loss_val = calculate_and_update(net, batch_X, batch_Y, loss, learning_rate)
             i += batch_size
-
 
         if epoch % 100 == 0:
             print("Epoch", epoch, " loss:", loss_val)

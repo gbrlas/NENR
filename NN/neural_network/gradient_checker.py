@@ -1,4 +1,4 @@
-from neural_network.Layers import *
+from neural_network.layers import *
 
 def rel_error(x, y):
     """ returns relative error """
