@@ -7,13 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253ca053-fa7a-4561-a669-fbda3f6daf12" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/Demo.class" afterPath="$PROJECT_DIR$/bin/zadaca3/Demo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/logic/AccelerationConclusionMin.class" afterPath="$PROJECT_DIR$/bin/zadaca3/logic/AccelerationConclusionMin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/logic/AccelerationConclusionProduct.class" afterPath="$PROJECT_DIR$/bin/zadaca3/logic/AccelerationConclusionProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/logic/COADefuzzifier.class" afterPath="$PROJECT_DIR$/bin/zadaca3/logic/COADefuzzifier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/logic/RudderConclusionMin.class" afterPath="$PROJECT_DIR$/bin/zadaca3/logic/RudderConclusionMin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/logic/RudderConclusionProduct.class" afterPath="$PROJECT_DIR$/bin/zadaca3/logic/RudderConclusionProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/rules/RudderRuleBase.class" afterPath="$PROJECT_DIR$/bin/zadaca3/rules/RudderRuleBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/rules/Rule.class" afterPath="$PROJECT_DIR$/bin/zadaca3/rules/Rule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca3/rules/RuleBase.class" afterPath="$PROJECT_DIR$/bin/zadaca3/rules/RuleBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/Demo.class" afterPath="$PROJECT_DIR$/bin/zadaca4/Demo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/functions/ErrorFunction.class" afterPath="$PROJECT_DIR$/bin/zadaca4/functions/ErrorFunction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/functions/Function.class" afterPath="$PROJECT_DIR$/bin/zadaca4/functions/Function.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/GenerationalAlgorithm.class" afterPath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/GenerationalAlgorithm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/Population.class" afterPath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/Population.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/operators/Crossover.class" afterPath="$PROJECT_DIR$/bin/zadaca4/operators/Crossover.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/operators/Mutation.class" afterPath="$PROJECT_DIR$/bin/zadaca4/operators/Mutation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/operators/Selection.class" afterPath="$PROJECT_DIR$/bin/zadaca4/operators/Selection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/records/Record.class" afterPath="$PROJECT_DIR$/bin/zadaca4/records/Record.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/records/Records.class" afterPath="$PROJECT_DIR$/bin/zadaca4/records/Records.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GeneticAlgorithm.java" afterPath="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GeneticAlgorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Population.java" afterPath="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Population.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca4/operators/Crossover.java" afterPath="$PROJECT_DIR$/src/zadaca4/operators/Crossover.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca4/operators/Selection.java" afterPath="$PROJECT_DIR$/src/zadaca4/operators/Selection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca4/records/Record.java" afterPath="$PROJECT_DIR$/src/zadaca4/records/Record.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca4/records/Records.java" afterPath="$PROJECT_DIR$/src/zadaca4/records/Records.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zadaca4/Demo.java" afterPath="$PROJECT_DIR$/src/zadaca4/Demo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,6 +39,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Mutation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca4/operators/Mutation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" column="76" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Selection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca4/operators/Selection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="76" column="46" lean-forward="false" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Population.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Population.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenerationalAlgorithm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GenerationalAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1073">
+              <caret line="120" column="46" lean-forward="false" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Record.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca4/records/Record.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="953">
+              <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Records.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca4/records/Records.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="88" column="4" lean-forward="false" selection-start-line="88" selection-start-column="4" selection-end-line="95" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EliminationAlgorithm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/EliminationAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="108" column="65" lean-forward="false" selection-start-line="108" selection-start-column="65" selection-end-line="108" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chromosome.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Chromosome.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ErrorFunction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zadaca4/functions/ErrorFunction.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -37,104 +143,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mutation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca4/operators/Mutation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Crossover.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zadaca4/operators/Crossover.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
               <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Population.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Population.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-367">
-              <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneticAlgorithm.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GeneticAlgorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="107" lean-forward="false" selection-start-line="7" selection-start-column="107" selection-end-line="7" selection-end-column="107" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Record.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca4/records/Record.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Records.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca4/records/Records.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="88" column="4" lean-forward="true" selection-start-line="88" selection-start-column="4" selection-end-line="95" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca4/functions/Function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EliminationAlgorithm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/EliminationAlgorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="98" column="26" lean-forward="false" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chromosome.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Chromosome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-172">
-              <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -195,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Selection.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Mutation.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Crossover.java" />
-        <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Chromosome.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/versions/ElimitationAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/functions/Function.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/functions/ErrorFunction.java" />
@@ -203,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/versions/GenerationalAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/operators/Mutation.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GenerationalAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/zadaca4/Demo.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/AbstractGeneticAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/EliminationAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/records/Record.java" />
@@ -212,6 +224,8 @@
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Population.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/records/Records.java" />
         <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GeneticAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Chromosome.java" />
+        <option value="$PROJECT_DIR$/src/zadaca4/Demo.java" />
       </list>
     </option>
   </component>
@@ -293,8 +307,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -549,12 +563,16 @@
       <workItem from="1512644913627" duration="1201000" />
       <workItem from="1512654739405" duration="251000" />
       <workItem from="1512655876444" duration="53000" />
-      <workItem from="1512824149676" duration="1124000" />
+      <workItem from="1512824149676" duration="1174000" />
+      <workItem from="1512843589543" duration="594000" />
+      <workItem from="1512915333781" duration="71000" />
+      <workItem from="1512917266779" duration="24000" />
+      <workItem from="1512926827709" duration="494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49129000" />
+    <option name="totallyTimeSpent" value="50362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -855,31 +873,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/AbstractGeneticAlgorithm.java" />
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/functions/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GeneticAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zadaca4/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="285">
+          <caret line="19" column="92" lean-forward="false" selection-start-line="19" selection-start-column="92" selection-end-line="19" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Population.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/AbstractGeneticAlgorithm.java" />
     <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GenerationalAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="126" column="60" lean-forward="false" selection-start-line="124" selection-start-column="4" selection-end-line="126" selection-end-column="60" />
+        <state relative-caret-position="1073">
+          <caret line="120" column="46" lean-forward="false" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/operators/Selection.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/EliminationAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="76" column="46" lean-forward="false" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+        <state relative-caret-position="333">
+          <caret line="108" column="65" lean-forward="false" selection-start-line="108" selection-start-column="65" selection-end-line="108" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -890,17 +934,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/operators/Mutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="76" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/operators/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="76" column="46" lean-forward="false" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/functions/Function.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/records/Record.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="953">
+          <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadaca4/records/Records.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="88" column="4" lean-forward="false" selection-start-line="88" selection-start-column="4" selection-end-line="95" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -914,66 +984,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/EliminationAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="98" column="26" lean-forward="false" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Population.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367">
-          <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/Chromosome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/operators/Mutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/records/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/records/Records.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="88" column="4" lean-forward="true" selection-start-line="88" selection-start-column="4" selection-end-line="95" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca4/genetic_algorithm/GeneticAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="107" lean-forward="false" selection-start-line="7" selection-start-column="107" selection-end-line="7" selection-end-column="107" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
