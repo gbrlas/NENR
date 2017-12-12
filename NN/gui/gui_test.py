@@ -3,9 +3,9 @@ import numpy as np
 
 from neural_network import layers
 from neural_network.NN import forward_pass, train
-from input_processing import  processor
+from input_processing import  data_processing
 
-X, y = processor.get_data()
+X, y = data_processing.load_data()
 
 config = {}
 config['max_epochs'] = 20000

@@ -21,12 +21,14 @@ def backward_pass(net, loss, x, y):
         grad_out = grad_inputs
     return grads
 
+
 def sgd_update_params(grads, learning_rate):
     for layer_grads in grads:
         for i in range(len(layer_grads) - 1):
             params = layer_grads[i][0]
             grads = layer_grads[i][1]
             params -= learning_rate * grads
+
 
 def calculate_and_update(net, train_x, train_y, loss, learning_rate):
     fw = forward_pass(net, train_x)
@@ -36,6 +38,7 @@ def calculate_and_update(net, train_x, train_y, loss, learning_rate):
     sgd_update_params(grads, learning_rate)
 
     return loss_val
+
 
 def train(train_x, train_y, net, loss, config):
     max_epochs = config['max_epochs']
@@ -54,6 +57,3 @@ def train(train_x, train_y, net, loss, config):
             print("Epoch", epoch, " loss:", loss_val)
 
     return net
-
-
-

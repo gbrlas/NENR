@@ -3,16 +3,19 @@ import numpy as np
 
 from neural_network import layers
 from neural_network.NN import forward_pass, train
-from input_processing import  processor
+from input_processing import data_transformation, data_processing
 
-def clear_canvas(event):
+def reset_canvas(event):
     canvas.delete('all')
 
 def train_nn():
-    X, y = processor.get_data()
+    canvas.unbind('<ButtonRelease-1>')
+    print('Training NN...')
+
+    X, y = data_processing.load_data()
 
     config = {}
-    config['max_epochs'] = 20000
+    config['max_epochs'] = 30000
     config['learning_rate'] = 0.0015
     config['batch_size'] = 100
 
@@ -30,74 +33,67 @@ def train_nn():
 
     train(X, y, net, loss, config)
 
+    global isFitted
+    isFitted = True
+
 def draw(event):
     x, y = event.x, event.y
     points.append([x, y])
     canvas.create_oval(x - 1, y - 1, x + 1, y + 1, fill='black')
 
 
-def save(event):
+def save_points(event):
     global drawing_index
 
     symbol_index = int((drawing_index - 1) / samples_per_class)
-    symbol = processor.get_symbol(symbol_index)
+    symbol = data_processing.get_symbol(symbol_index)
     remaining = int((symbol_index + 1) * samples_per_class - drawing_index)
 
     if remaining > 0:
-        label.config(text=processor.get_symbol(symbol_index) + ' remaining: ' + str(remaining))
+        label.config(text=data_processing.get_symbol(symbol_index) + ' remaining: ' + str(remaining))
     else:
-        label.config(text=processor.get_symbol(symbol_index + 1) + ' remaining: ' + str(20))
+        label.config(text=data_processing.get_symbol(symbol_index + 1) + ' remaining: ' + str(20))
 
-    is_saved = processor.store_data(np.array(points), symbol, features)
+    is_saved = data_processing.save_data(np.array(points), symbol, features)
 
     if drawing_index == train_data_len:
-        fit()
+        train_nn()
 
     if is_saved:
         drawing_index += 1
 
     points.clear()
 
-def fit():
-    canvas.unbind('<ButtonRelease-1>')
-    print('Fitting...')
-
-    train_nn()
-
-    global isFitted
-    isFitted = True
-
-
 def train_button():
-    processor.delete_data()
+    data_processing.delete_data()
     label.config(text='Start training alpha!')
     label.pack(side=TOP, fill=X, expand=True)
     canvas.bind('<B1-Motion>', draw)
-    canvas.bind('<ButtonRelease-1>', save)
-    canvas.bind('<Button-1>', clear_canvas)
+    canvas.bind('<ButtonRelease-1>', save_points)
+    canvas.bind('<Button-1>', reset_canvas)
 
 def predict_button():
     global isFitted
+
     if not isFitted:
         train_nn()
         isFitted = True
 
     canvas.bind('<B1-Motion>', draw)
     canvas.bind('<ButtonRelease-1>', get_solution)
-    canvas.bind('<Button-1>', clear_canvas)
+    canvas.bind('<Button-1>', reset_canvas)
     label.config(text='Draw a symbol!')
     label.pack()
 
 
 def get_solution(event):
-    gesture = processor.get_processed(np.array(points), features)
-    print(gesture)
+    drawn_symbol = data_transformation.process_points(np.array(points), features)
 
     global net
 
-    y = forward_pass(net, gesture)
-    print('\nPredicting...')
-    print('Drawn simbol is ' + processor.get_symbol(np.argmax(y)) + '.\t' + str(y))
+    y = forward_pass(net, drawn_symbol)
+    print('Drawn symbol is ' + data_processing.get_symbol(np.argmax(y)) + '.\t' + str(y))
+
     points.clear()
 
 
@@ -118,7 +114,7 @@ canvas.pack()
 
 button_train = Button(window, text='Train NN from scratch', command=train_button);
 button_train.pack(side=LEFT, fill=X, expand=True)
-button_predict = Button(window, text='Predict symbol', command=predict_button);
+button_predict = Button(window, text='Predict symbols', command=predict_button);
 button_predict.pack(side=RIGHT, fill=X, expand=True)
 
 drawing_index = 1
