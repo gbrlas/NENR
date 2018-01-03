@@ -7,27 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253ca053-fa7a-4561-a669-fbda3f6daf12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca5/Demo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca5/anfis/ANFIS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca5/anfis/Rule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca5/data/Dataset.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca5/data/Example.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zadaca5/function/Function.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nenr_lab.iml" afterPath="$PROJECT_DIR$/Example.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/Demo.class" afterPath="$PROJECT_DIR$/bin/zadaca4/Demo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/Chromosome.class" afterPath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/Chromosome.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/EliminationAlgorithm.class" afterPath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/EliminationAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/GeneticAlgorithm.class" afterPath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/GeneticAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/Population.class" afterPath="$PROJECT_DIR$/bin/zadaca4/genetic_algorithm/Population.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/operators/Crossover.class" afterPath="$PROJECT_DIR$/bin/zadaca4/operators/Crossover.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/operators/Selection.class" afterPath="$PROJECT_DIR$/bin/zadaca4/operators/Selection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/records/Record.class" afterPath="$PROJECT_DIR$/bin/zadaca4/records/Record.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/zadaca4/records/Records.class" afterPath="$PROJECT_DIR$/bin/zadaca4/records/Records.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/nenr_lab_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/nenr_lab_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NN/.idea/workspace.xml" afterPath="$PROJECT_DIR$/NN/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NN/gui/gui.py" afterPath="$PROJECT_DIR$/NN/gui/gui.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zadaca5/Demo.java" afterPath="$PROJECT_DIR$/src/zadaca6/Demo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zadaca5/anfis/ANFIS.java" afterPath="$PROJECT_DIR$/src/zadaca6/anfis/ANFIS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zadaca5/anfis/Rule.java" afterPath="$PROJECT_DIR$/src/zadaca6/anfis/Rule.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zadaca5/data/Dataset.java" afterPath="$PROJECT_DIR$/src/zadaca6/data/Dataset.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zadaca5/data/Example.java" afterPath="$PROJECT_DIR$/src/zadaca6/data/Example.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zadaca5/function/Function.java" afterPath="$PROJECT_DIR$/src/zadaca6/function/Function.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +25,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Rule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca5/anfis/Rule.java">
+        <entry file="file://$PROJECT_DIR$/src/zadaca6/anfis/Rule.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
@@ -54,7 +39,7 @@
         </entry>
       </file>
       <file leaf-file-name="ANFIS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca5/anfis/ANFIS.java">
+        <entry file="file://$PROJECT_DIR$/src/zadaca6/anfis/ANFIS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2196">
               <caret line="155" column="15" lean-forward="true" selection-start-line="155" selection-start-column="15" selection-end-line="155" selection-end-column="15" />
@@ -66,7 +51,7 @@
         </entry>
       </file>
       <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca5/Demo.java">
+        <entry file="file://$PROJECT_DIR$/src/zadaca6/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
@@ -78,7 +63,7 @@
         </entry>
       </file>
       <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca5/data/Example.java">
+        <entry file="file://$PROJECT_DIR$/src/zadaca6/data/Example.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
               <caret line="86" column="28" lean-forward="false" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
@@ -88,7 +73,7 @@
         </entry>
       </file>
       <file leaf-file-name="Dataset.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zadaca5/data/Dataset.java">
+        <entry file="file://$PROJECT_DIR$/src/zadaca6/data/Dataset.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
@@ -98,7 +83,7 @@
         </entry>
       </file>
       <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zadaca5/function/Function.java">
+        <entry file="file://$PROJECT_DIR$/src/zadaca6/function/Function.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
@@ -134,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/zadaca3/logic/AccelerationFuzzySystemMin.java" />
         <option value="$PROJECT_DIR$/src/zadaca3/rules/RudderRules.java" />
         <option value="$PROJECT_DIR$/src/zadaca3/rules/AccelerationRules.java" />
         <option value="$PROJECT_DIR$/src/zadaca3/rules/AccelerationRuleBase.java" />
@@ -185,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/zadaca5/Demo.java" />
         <option value="$PROJECT_DIR$/src/zadaca5/anfis/Rule.java" />
         <option value="$PROJECT_DIR$/src/zadaca5/anfis/ANFIS.java" />
+        <option value="$PROJECT_DIR$/src/zadaca6/data/Dataset.java" />
       </list>
     </option>
   </component>
@@ -283,27 +268,27 @@
               <item name="nenr_lab" type="b2602c69:ProjectViewProjectNode" />
               <item name="nenr_lab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zadaca5" type="462c0819:PsiDirectoryNode" />
+              <item name="zadaca6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nenr_lab" type="b2602c69:ProjectViewProjectNode" />
               <item name="nenr_lab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zadaca5" type="462c0819:PsiDirectoryNode" />
+              <item name="zadaca6" type="462c0819:PsiDirectoryNode" />
               <item name="anfis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nenr_lab" type="b2602c69:ProjectViewProjectNode" />
               <item name="nenr_lab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zadaca5" type="462c0819:PsiDirectoryNode" />
+              <item name="zadaca6" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nenr_lab" type="b2602c69:ProjectViewProjectNode" />
               <item name="nenr_lab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zadaca5" type="462c0819:PsiDirectoryNode" />
+              <item name="zadaca6" type="462c0819:PsiDirectoryNode" />
               <item name="function" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -370,25 +355,6 @@
       <module name="nenr_lab" />
       <envs />
     </configuration>
-    <configuration name="Demo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zadaca5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zadaca5.Demo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Example" />
-      <envs />
-    </configuration>
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -419,6 +385,25 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Example" />
+      <envs />
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="zadaca6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="zadaca6.Demo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -577,12 +562,12 @@
       <workItem from="1512926827709" duration="494000" />
       <workItem from="1514896805456" duration="49000" />
       <workItem from="1514896870951" duration="3768000" />
-      <workItem from="1515005469127" duration="4533000" />
+      <workItem from="1515005469127" duration="4604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58712000" />
+    <option name="totallyTimeSpent" value="58783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-126" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -931,7 +916,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca5/data/Example.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca6/data/Example.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="86" column="28" lean-forward="false" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
@@ -939,7 +924,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca5/Demo.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca6/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
@@ -949,7 +934,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca5/function/Function.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca6/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
@@ -957,7 +942,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca5/anfis/Rule.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca6/anfis/Rule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
@@ -969,7 +954,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca5/anfis/ANFIS.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca6/anfis/ANFIS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2196">
           <caret line="155" column="15" lean-forward="true" selection-start-line="155" selection-start-column="15" selection-end-line="155" selection-end-column="15" />
@@ -979,7 +964,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadaca5/data/Dataset.java">
+    <entry file="file://$PROJECT_DIR$/src/zadaca6/data/Dataset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />

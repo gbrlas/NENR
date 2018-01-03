@@ -1,8 +1,8 @@
-package zadaca5;
+package zadaca6;
 
-import zadaca5.anfis.ANFIS;
-import zadaca5.data.Dataset;
-import zadaca5.data.Example;
+import zadaca6.anfis.ANFIS;
+import zadaca6.data.Dataset;
+import zadaca6.data.Example;
 
 import java.util.ArrayList;
 

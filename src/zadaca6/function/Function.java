@@ -1,4 +1,4 @@
-package zadaca5.function;
+package zadaca6.function;
 
 /**
  * Class which provides a static method for calculating function value at the provided coordinates.

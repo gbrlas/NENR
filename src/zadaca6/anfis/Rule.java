@@ -1,6 +1,6 @@
-package zadaca5.anfis;
+package zadaca6.anfis;
 
-import zadaca5.data.Example;
+import zadaca6.data.Example;
 
 import java.util.Random;
 

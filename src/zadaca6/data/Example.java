@@ -1,6 +1,6 @@
-package zadaca5.data;
+package zadaca6.data;
 
-import zadaca5.function.Function;
+import zadaca6.function.Function;
 
 /**
  * Class which represents a single example and contains its x, y and value.

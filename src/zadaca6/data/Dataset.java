@@ -1,4 +1,4 @@
-package zadaca5.data;
+package zadaca6.data;
 
 import java.util.ArrayList;
 
