@@ -66,8 +66,10 @@ def save_points(event):
 
 def train_button():
     data_processing.delete_data()
+
     label.config(text='Start training alpha!')
     label.pack(side=TOP, fill=X, expand=True)
+
     canvas.bind('<B1-Motion>', draw)
     canvas.bind('<ButtonRelease-1>', save_points)
     canvas.bind('<Button-1>', reset_canvas)
@@ -79,11 +81,13 @@ def predict_button():
         train_nn()
         isFitted = True
 
+    label.config(text='Draw a symbol!')
+    label.pack(side=TOP, fill=X, expand=True)
+
     canvas.bind('<B1-Motion>', draw)
     canvas.bind('<ButtonRelease-1>', get_solution)
     canvas.bind('<Button-1>', reset_canvas)
-    label.config(text='Draw a symbol!')
-    label.pack()
+
 
 
 def get_solution(event):

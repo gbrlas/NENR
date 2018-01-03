@@ -2,7 +2,7 @@
   <artifact type="jar" name="nenr_lab:jar">
     <output-path>$PROJECT_DIR$/classes/artifacts/nenr_lab_jar</output-path>
     <root id="archive" name="nenr_lab.jar">
-      <element id="module-output" name="nenr_lab" />
+      <element id="module-output" name="Example" />
     </root>
   </artifact>
 </component>
