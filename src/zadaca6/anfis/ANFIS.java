@@ -2,6 +2,8 @@ package zadaca6.anfis;
 
 import zadaca6.data.Example;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -24,7 +26,7 @@ public class ANFIS {
     /**
      * Number of iterations.
      */
-    private static final int ITERATIONS = 200000;
+    private static final int ITERATIONS = 400000;
 
     /**
      * Constructor which sets the parameters to the provided ones.
@@ -74,14 +76,24 @@ public class ANFIS {
      * @param data         List of examples.
      * @param learningRate Neural net learning rate.
      * @param batch        Boolean representing whether batch or online learning is used.
+     * @return epoch_error Epoch error.
      */
-    public void train(ArrayList<Example> data, double learningRate, boolean batch) {
+    public double train(ArrayList<Example> data, double learningRate, boolean batch) {
         for (int i = 0; i < numRules; i++) {
             rules.add(new Rule());
         }
 
         int current_epoch = 0;
         double epoch_error = Double.MAX_VALUE;
+
+
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter("errors.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         while (current_epoch <= ITERATIONS && epoch_error > EPSILON) {
             epoch_error = 0;
@@ -108,6 +120,13 @@ public class ANFIS {
                 System.out.format("Epoch = %d  error = %.6f%n", current_epoch, epoch_error);
             }
 
+            try {
+                writer.write(String.valueOf(epoch_error) + "\n");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
             current_epoch++;
 
         }
@@ -116,6 +135,8 @@ public class ANFIS {
         System.out.println("Finished!");
         System.out.format("Epoch = %6d  error = %f%n", current_epoch - 1, epoch_error);
         System.out.println();
+
+        return epoch_error;
     }
 
     /**
@@ -160,5 +181,10 @@ public class ANFIS {
      */
     public double sigmoid(double x, double a, double b) {
         return 1. / (1 + Math.exp(b * (x - a)));
+    }
+
+
+    public ArrayList<Rule> getRules() {
+        return rules;
     }
 }

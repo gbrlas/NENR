@@ -1,9 +1,11 @@
 package zadaca6;
 
 import zadaca6.anfis.ANFIS;
+import zadaca6.anfis.Rule;
 import zadaca6.data.Dataset;
 import zadaca6.data.Example;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -18,7 +20,7 @@ public class Demo {
      *
      * @param args none needed.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         int numRules = 7;
 
@@ -28,8 +30,12 @@ public class Demo {
         anfis.train(data, 1e-4, true);
 
         for (Example example : data) {
-            System.out.println("" + example.getY() + "   " + example.getY() + "  Error: " +
+            System.out.println(example.getX() + " " + example.getY() + " " +
                     (example.getValue() - anfis.forward_pass(example.getX(), example.getY())));
+        }
+
+        for (Rule rule : anfis.getRules()) {
+            System.out.println(rule);
         }
 
     }
