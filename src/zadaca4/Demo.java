@@ -19,12 +19,10 @@ public class Demo {
         int paramSize = 5;
         String fileName = "/Users/goran/eclipse-workspace/nenr_lab/src/zadaca4/zad4-dataset2.txt";
 
-
+        System.out.println("Generacijski algoritam:");
         GenerationalAlgorithm gaGenerational = new GenerationalAlgorithm(populationSize, paramSize, upperBound, lowerBound, iterations, elitism, fileName, pm);
         gaGenerational.run();
 
-        //EliminationAlgorithm gaElimination = new EliminationAlgorithm(populationSize, paramSize, upperBound, lowerBound, iterations, fileName, pm);
-        //gaElimination.run();
     }
 
 
