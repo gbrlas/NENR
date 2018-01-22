@@ -60,10 +60,13 @@ public class ANFIS {
         // Layer 3
         double output = 0;
         for (Rule rule : rules) {
+            // normalization
             rule.w_norm = rule.w / w_sum;
 
-            //Layer 4
+            // Layer 4
             rule.z = rule.p * x + rule.q * y + rule.r;
+
+            // Layer 5
             output += rule.w_norm * rule.z;
         }
 

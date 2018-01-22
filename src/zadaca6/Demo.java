@@ -27,7 +27,7 @@ public class Demo {
         ArrayList<Example> data = Dataset.generateDataset();
 
         ANFIS anfis = new ANFIS(numRules);
-        anfis.train(data, 1e-4, true);
+        anfis.train(data, 1e-4, false);
 
         for (Example example : data) {
             System.out.println(example.getX() + " " + example.getY() + " " +

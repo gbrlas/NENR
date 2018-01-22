@@ -72,14 +72,14 @@ public class Rule {
      * @param example  Example
      */
     public void updateDerivations(double error, double razlomak, Example example) {
-        dA1 -= error * razlomak * beta * alpha * (1 - alpha) * A2;
-        dA2 -= error * razlomak * beta * alpha * (1 - alpha) * (A1 - example.getX());
-        dB1 -= error * razlomak * alpha * beta * (1 - beta) * B2;
-        dB2 -= error * razlomak * alpha * beta * (1 - beta) * (B1 - example.getY());
+        dA1 += error * razlomak * beta * alpha * (1 - alpha) * A2;
+        dA2 += error * razlomak * beta * alpha * (1 - alpha) * (A1 - example.getX());
+        dB1 += error * razlomak * alpha * beta * (1 - beta) * B2;
+        dB2 += error * razlomak * alpha * beta * (1 - beta) * (B1 - example.getY());
 
-        dp -= error * w_norm * example.getX();
-        dq -= error * w_norm * example.getY();
-        dr -= error * w_norm;
+        dp += error * w_norm * example.getX();
+        dq += error * w_norm * example.getY();
+        dr += error * w_norm;
     }
 
     /**
@@ -95,13 +95,13 @@ public class Rule {
      * @param learningRate
      */
     public void updateParameters(double learningRate) {
-        A1 -= learningRate * dA1;
-        A2 -= learningRate * dA2;
-        B1 -= learningRate * dB1;
-        B2 -= learningRate * dB2;
-        p -= learningRate * dp;
-        q -= learningRate * dq;
-        r -= learningRate * dr;
+        A1 += learningRate * dA1;
+        A2 += learningRate * dA2;
+        B1 += learningRate * dB1;
+        B2 += learningRate * dB2;
+        p += learningRate * dp;
+        q += learningRate * dq;
+        r += learningRate * dr;
     }
 
     @Override
